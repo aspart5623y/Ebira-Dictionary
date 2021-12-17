@@ -1,0 +1,244 @@
+/* 
+    
+    Table of Content
+    **********************
+    1. General Settings
+    2. Preloader
+    3. Navbar
+    
+
+*/
+
+/* =====================================  
+   1. G E N E R A L    S E T T I N G S  
+====================================== */
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-size: 16px;
+    outline: none !important;
+    text-decoration: none !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fff;
+}
+.btn {
+    box-shadow: none !important;
+    border-radius: 0px !important;
+    font-size: 15px;
+    padding: 9px 0;
+    font-weight: bold;
+}
+.bg-primary{
+    background-color: #4D59C8 !important;
+}
+.btn-primary{
+    background-color: #4D59C8 !important;
+    border-color: #4D59C8 !important;
+}
+.btn-outline-primary{
+    border-color: #4D59C8 !important;
+    color: #4D59C8 !important;
+}
+.btn-outline-primary:hover{
+    background-color: #4D59C8 !important;
+    color: #fff !important;
+}
+.btn-primary:hover{
+    background-color: #5447c4 !important;
+    border-color: #5447c4 !important;
+}
+.text-primary{
+    color: #4D59C8 !important;
+}
+.rounded{
+    border-radius: 10px !important;
+}
+.breadcrumb-item a{
+    color: #4D59C8 !important;
+}
+.breadcrumb-item.active{
+    color: rgb(68, 67, 67);
+}
+.section{
+    padding: 90px 0;
+}
+.form-control {
+    background-color: rgba(211, 211, 211, 0.2);
+    border: none;
+}
+.input-group-text {
+    border: none;
+    background-color: rgba(211, 211, 211, 0.2);
+}
+.form-control:focus {
+    box-shadow: none;
+    background-color: rgba(211, 211, 211, 0.2);
+    
+}
+
+/* ========================  P R E L O A D E R  ======================= */
+#preloader {
+    position: fixed;
+    top: 0px !important;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    z-index: 99999;
+}
+
+#preloader.loaded {
+    opacity: 1;
+    z-index: 99999;
+    animation-name: fadeout;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+/* ========================  A M I N A T I O N  ======================= */
+@keyframes fadeout{
+    0% {
+        opacity: 1;
+        z-index: 99999;
+    }
+    100% {
+        opacity: 0;
+        z-index: -9999;
+    }
+}
+
+
+/* ========================  
+      3. N A V B A R  
+======================= */
+.nav-item{
+    padding: 0px 10px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        position: fixed;
+        width: 250px;
+        top: 0px;
+        bottom: 0px;
+        right: -300px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        background: #fff;
+        padding: 10px 20px;
+        z-index: 9999;
+        transition: .2s all ease-in-out;
+    }
+
+    .navbar-collapse.open {
+        right: 0px;
+    }
+
+    .sidebar-overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+        opacity: 0;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: .2s all ease-in-out;
+        z-index: 1500;
+    }   
+    .sidebar-overlay.open {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.masthead {
+    background-color: #F6FAFF;
+    padding: 150px 0px 0px 0px;
+    margin-top: -90px;
+}
+
+
+
+.counter {
+    padding: 250px 0 250px 0;
+    background-image: url('../images/Huge\ Global.png');
+    background-position: center 100px;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 576px) {
+    .counter {
+        padding: 150px 0 100px 0;
+    }
+}
+
+
+/* ======================== T E S T I M O N I A L S ======================= */
+.testimonials .owl-nav {
+    float: right;
+    margin: 30px;
+}
+.testimonials .owl-nav button {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #4D59C8 !important;
+    border-radius: 30px !important;
+    transition: .2s all ease-in-out;
+}
+.testimonials .owl-nav button span {
+    position: absolute;
+    font-size: 30px !important;
+    top: -5px !important;
+    left: 18px;
+    color:  #4D59C8 !important;
+}
+.testimonials .owl-nav button:hover {
+    background-color:  #4D59C8 !important;
+}
+.testimonials .owl-nav button:hover span {
+    color:  #fff !important;
+}
+.testimonials .owl-dots {
+    float: left;
+    margin: 30px;
+}
+.testimonials .owl-dot.active span {
+    background-color:  #4D59C8 !important;
+}
+
+
+
+
+/* ======================== S U B S C R I B E ======================= */
+.subscribe {
+    position: relative;
+    padding: 0px;
+    bottom: -100px !important;
+    z-index: 1;
+}
+
+
+
+/* ======================== F O O T E R ======================= */
+footer {
+    padding: 250px 0 80px 0;
+}
+footer a {
+    text-decoration: none;
+}

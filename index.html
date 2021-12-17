@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebira Dictionary</title>
+    <link rel="shortcut icon" href="assets/images/logo/Vector.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    
+    <!-- 
+        ========================  P R E L O A D E R  =======================
+    -->
+    <div id="preloader">
+        <img loading="lazy" src="assets/images/preloader/loader (2).gif" alt="preloader">
+    </div>
+
+
+
+    
+
+    
+    <!-- 
+        ========================  N A V B A R  =======================
+    -->
+    <div class="px-2 px-sm-3 px-lg-5 py-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <!-- navbar brand -->
+                <a class="navbar-brand d-block tex3-primary" href="#">
+                    <!-- image logo -->
+                    <img src="assets/images/logo/Vector.png" width="30" alt="">
+                    &nbsp;
+                    <!-- text -->
+                    <span class="fw-bold text-uppercase">Kaneri</span>
+                </a>
+    
+                <!-- sidebar toggler btn -->
+                <button class="navbar-toggler border-0 d-lg-none ml-3" onclick="showMenu()">
+                    <span class="navbar-toggler-bar bg-dark w-100"></span>
+                    <span class="navbar-toggler-bar bg-dark w-75"></span>
+                    <span class="navbar-toggler-bar bg-dark w-100"></span>
+                </button>
+    
+                <div class="sidebar-overlay" onclick="closeMenu()"></div>
+    
+                <!-- sidebar toggler btn -->
+                <div class="navbar-collapse">
+                    <button class="navbar-toggler border-0 d-lg-none ml-3" onclick="closeMenu()">
+                        <span class="navbar-toggler-stroke left bg-dark w-100"></span>
+                        <span class="navbar-toggler-stroke right bg-dark w-100"></span>
+                    </button>
+    
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mx-auto">
+                        <!-- home link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <!-- about link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <!-- a-z link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A-Z</a>
+                        </li>
+                        <!-- suggest word link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Suggest Word</a>
+                        </li>
+                        <!-- team link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                    </ul>
+    
+                    <!-- right Side Of Navbar -->
+                    <ul class="navbar-nav ms-auto">
+                        <!-- join team link -->
+                        <li class="nav-item">
+                            <a class="btn btn-link fw-bold text-dark" href="#">Join Team</a>
+                        </li>
+                        <!-- donate link -->
+                        <li class="nav-item">
+                            <a class="btn btn-primary text-uppercase px-5" href="#">Donate</a>
+                        </li>
+                    </ul>
+    
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    
+
+
+
+    <!-- 
+        ========================  M A S T H E A D  =======================
+    -->
+    <section class="masthead">
+        <div class="container">
+            <div class="masthead-content">
+                <div class="text-center">
+                    <h4 class="display-6 fw-bold text-capitalize">Welcome To Kaneri Ebira Online Dictionary</h4>
+                    <p class="text-muted my-4">On Kaneri You Search For Words and We Provide You With The Best Results in Ebira Meanings & Translation</p>
+                    <form>
+                        <div class="col-lg-7 col-sm-10 mx-auto mb-4">
+                            <input class="form-control text-center bg-white border p-3 shadow-sm" type="text" placeholder="Search any Ebira or english word">
+                        </div>
+                        <button class="btn btn-primary px-5 py-3">Search Word</button>
+                    </form>
+                </div>
+
+                
+                <!-- counter section -->
+                <div class="counter">
+                    <div class="card rounded border-0 shadow-lg">
+                        <div class="card-body py-4">
+                            <div class="row justify-content-center">
+                                
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="row py-5 border-end">
+                                        <div class="col align-self-center">
+                                            <div class="counter-box text-primary rounded-circle ms-auto" style="background-color: #F6FAFF; width: 45px; height: 45px; display:flex;">
+                                                <i class="fas fa-book d-block m-auto"></i>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col">
+                                            <h2 class="fw-bold mb-1">2k+</h2>
+                                            <p class="mb-0">Words</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="row py-5 border-end">
+                                        <div class="col align-self-center">
+                                            <div class="counter-box text-primary rounded-circle ms-auto" style="background-color: #F6FAFF; width: 45px; height: 45px; display:flex;">
+                                                <i class="fas fa-user d-block m-auto"></i>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col">
+                                            <h2 class="fw-bold mb-1">3</h2>
+                                            <p class="mb-0">Developers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="row py-5">
+                                        <div class="col align-self-center">
+                                            <div class="counter-box text-primary rounded-circle ms-auto" style="background-color: #F6FAFF; width: 45px; height: 45px; display:flex;">
+                                                <i class="fas fa-language d-block m-auto"></i>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col">
+                                            <h2 class="fw-bold mb-1">3 Ebira</h2>
+                                            <p class="mb-0">Languages</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of counter section -->
+
+
+
+
+                <!-- features -->
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5 text-center">
+                        <img src="./assets/images/232890906_2904419629811471_5468119063820379211_n-removebg-preview 1.png" alt="" class="img-fluid mb-3 mb-lg-0">
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <h2 class="text-capitalize fw-bold mb-4">Kaneri! Ebira Online Dictionary Features</h2>
+                        <p class="mb-4">We have developed Kaneri the right way, and we are glad to let you know that, we’ve developed an amazing App</p>
+    
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fas fa-check-circle text-success" style="font-size: 20px"></i> &nbsp; 2,948 words and counting</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success" style="font-size: 20px"></i> &nbsp; The Right Pronounciations </li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success" style="font-size: 20px"></i> &nbsp; Good use of words and definitions</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success" style="font-size: 20px"></i> &nbsp; 3 Ebira dialects, Tao, Koton, Etuno</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- 
+        ======================== P A R T N E R S =======================
+    -->
+    <section class="py-4">
+        <div class="container">
+           
+            <!-- {{-- partners --}} -->
+            <div class="row justify-content-between mt-5">
+                <div class="col-6 col-sm-4 col-lg-2 my-3">
+                    <img src="./assets/images/rectangle.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2 my-3">
+                    <img src="./assets/images/rectangle.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2 my-3">
+                    <img src="./assets/images/rectangle.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2 my-3">
+                    <img src="./assets/images/rectangle.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2 my-3">
+                    <img src="./assets/images/rectangle.png" class="img-fluid" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- 
+        ======================== T E S T I M O N I A L S =======================
+    -->
+    <section class="section testimonials">
+        <div class="container">
+            <!-- {{-- header text --}} -->
+            <div class="text-center text-capitalize">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-4">
+                        <h2 class="fw-bold mb-4">What People Are Saying About Kaneri! Ebira Dictionary</h2>
+                        <p>
+                            With loads of features yet to be unveiled, we are exited that people finds our App useful. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+
+                <!-- {{-- item --}} -->
+                <div class="item">
+                    <div class="px-3">
+                        <div class="card rounded shadow-sm border-2" style="height: 250px">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="">
+                                        <div>
+                                            <img src="./assets/images/avatar/avatar.jpeg" class="rounded-circle" style="width: 40px;" alt="Sample Image">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <h6 class="fw-bold mb-0">Adinoyi Musa</h6>
+                                                <small class="text-muted">Lecturer</small>
+                                            </div>
+
+                                            <div class="col text-end">
+                                                <span>
+                                                    4.5 
+                                                    &nbsp;
+                                                    <i class="fas fa-star text-warning" style="font-size: 11px; margin-bottom: 2px"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="p-2 mt-3">
+                                    “Wow... I am very happy to use this APP, it turned out to be more than my expectations and so far there have been no problems. Kaneri!  always the best”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- {{-- item --}} -->
+                <div class="item">
+                    <div class="px-3">
+                        <div class="card rounded shadow-sm border-2" style="height: 250px">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="">
+                                        <div>
+                                            <img src="./assets/images/avatar/avatar.jpeg" class="rounded-circle" style="width: 40px;" alt="Sample Image">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <h6 class="fw-bold mb-0">Agavuda Isaac</h6>
+                                                <small class="text-muted">Professor</small>
+                                            </div>
+
+                                            <div class="col text-end">
+                                                <span>
+                                                    4.5 
+                                                    &nbsp;
+                                                    <i class="fas fa-star text-warning" style="font-size: 11px; margin-bottom: 2px"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="p-2 mt-3">
+                                    “I like it because i was able to get everything i needed done as quick as possible i really love you guys.”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- {{-- item --}} -->
+                <div class="item">
+                    <div class="px-3">
+                        <div class="card rounded shadow-sm border-2" style="height: 250px">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="">
+                                        <div>
+                                            <img src="./assets/images/avatar/avatar.jpeg" class="rounded-circle" style="width: 40px;" alt="Sample Image">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <h6 class="fw-bold mb-0">Adinoyi Musa</h6>
+                                                <small class="text-muted">Lecturer</small>
+                                            </div>
+
+                                            <div class="col text-end">
+                                                <span>
+                                                    4.5 
+                                                    &nbsp;
+                                                    <i class="fas fa-star text-warning" style="font-size: 11px; margin-bottom: 2px"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="p-2 mt-3">
+                                    “Wow... I am very happy to use this APP, it turned out to be more than my expectations and so far there have been no problems. Kaneri!  always the best”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- {{-- item --}} -->
+                <div class="item">
+                    <div class="px-3">
+                        <div class="card rounded shadow-sm border-2" style="height: 250px">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="">
+                                        <div>
+                                            <img src="./assets/images/avatar/avatar.jpeg" class="rounded-circle" style="width: 40px;" alt="Sample Image">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <h6 class="fw-bold mb-0">Adeiza Usman</h6>
+                                                <small class="text-muted">Student</small>
+                                            </div>
+
+                                            <div class="col text-end">
+                                                <span>
+                                                    4.5 
+                                                    &nbsp;
+                                                    <i class="fas fa-star text-warning" style="font-size: 11px; margin-bottom: 2px"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="p-2 mt-3">
+                                    “This is very unusual for my studies and project that currently requires the meaning of Ebira Words. Thank You Guys!”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>            
+        </div>
+    </section>
+
+
+
+      <!-- 
+            ======================== S U B S C R I B E =======================
+        -->
+        <section class="subscribe">
+            <div class="container">
+                <div class="bg-white border-0 rounded shadow-lg">
+                    <div class="card-body py-5 px-sm-5">
+                        <div class="d-md-flex justify-content-between align-items-center">
+
+                            <div class="col-xl-5 col-md-6 mt-3 pt-5">
+                                <h2 class="fw-bold">Subscribe To Our Newsletter For News</h2>
+                                <p class="text-muted mb-md-0 mb-4">Get Latest Updates From Kaneri to Your Inbox</p>
+                            </div>
+
+                            <div class="col-xl-4 col-md-6 text-end">
+                                <a href="#" class="btn btn-primary px-5 py-3">Subscribe Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- {{-- ======================== F O O T E R ======================= --}} -->
+        <footer class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <!-- {{-- first row --}} -->
+                    <div class="col-lg-4">
+                        <!-- navbar brand -->
+                        <a class="navbar-brand d-block tex3-primary" href="#">
+                            <!-- image logo -->
+                            <img src="assets/images/logo/Vector.png" width="30" alt="">
+                            &nbsp;
+                            <!-- text -->
+                            <span class="fw-bold text-uppercase text-dark">Kaneri</span>
+                        </a>
+
+                        <p class="text-muted">
+                            We help everyone to learn Ebira Language the right way. As a Software Developer Guys we havededicated our time to put Ebiraland on the MAP
+                        </p>
+
+                        <ul class="footer-icons d-flex px-0 my-3">
+                            <a href="#">
+                                <li class="d-flex mx-2 rounded-circle justify-content-center align-items-center bg-white shadow-sm" style="width: 40px; height: 40px;">
+                                    <i class="fab fa-facebook-f text-primary" style="font-size: 18px;"></i>
+                                </li>
+                            </a>
+
+                            <a href="#">
+                                <li class="d-flex mx-2 rounded-circle justify-content-center align-items-center bg-white shadow-sm" style="width: 40px; height: 40px;">
+                                    <i class="fab fa-twitter text-primary" style="font-size: 18px;"></i>
+                                </li>
+                            </a>
+
+                            <a href="#">
+                                <li class="d-flex mx-2 rounded-circle justify-content-center align-items-center bg-white shadow-sm" style="width: 40px; height: 40px;">
+                                    <i class="fab fa-instagram text-primary" style="font-size: 18px;"></i>
+                                </li>
+                            </a>
+                        </ul>
+
+                        <p class="text-muted">
+                            &copy; <?php echo date('Y') ?>  KANERI - Ebira Online Media
+                        </p>
+                    </div>
+
+                    <!-- {{-- second row --}} -->
+                    <div class="col-lg-8">
+                        <div class="row">
+
+                            <div class="col-sm-6 col-lg-4">
+                                <h5 class="fw-bold my-3">Editor</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">Ebira Online</a>
+                                    </li>
+
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">Ebira Music</a>
+                                    </li>
+
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">Mobile App</a>
+                                    </li>
+
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">Translator</a>
+                                    </li>
+
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-6 col-lg-4">
+                                <h5 class="fw-bold my-3">Useful Links</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">Home</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">FAQ</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">Tutorials</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">About Us</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-6 col-lg-4">
+                                <h4 class="fw-bold my-3">Support</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">Donate</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">Surgest Words</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="" class="text-muted">Join Team</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                   
+                    
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop:false,
+            margin:10,
+            autoplay:true,
+            nav: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                768:{
+                    items:2
+                },
+                992:{
+                    items:3
+                }
+            }
+        });
+    </script>
+</body>
+</html>
